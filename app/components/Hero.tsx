@@ -79,6 +79,9 @@ export default function Hero() {
         "Wardrobe Accessories and Space-Saving Storages"
     ];
 
+    const nextSlide = () =>
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+
     // Auto Slide
     useEffect(() => {
         const timer = setInterval(() => {
@@ -94,9 +97,6 @@ export default function Hero() {
         }, 3000);
         return () => clearInterval(t);
     }, []);
-
-    const nextSlide = () =>
-        setCurrentSlide((prev) => (prev + 1) % slides.length);
 
     const prevSlide = () =>
         setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);

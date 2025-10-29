@@ -10,8 +10,11 @@ export default function Header() {
     const [activeSection, setActiveSection] = useState("home");
 
     useEffect(() => {
-        const hash = window.location.hash.slice(1) || "home";
-        setActiveSection(hash);
+        if (typeof window === "undefined") return;
+        queueMicrotask(() => {
+            const hash = window.location.hash.slice(1) || "home";
+            setActiveSection(hash);
+        });
 
         const handleHashChange = () => {
             const updatedHash = window.location.hash.slice(1) || "home";
@@ -43,10 +46,10 @@ export default function Header() {
     return (
         <>
             <header className="fixed top-0 left-0 right-0 z-50 shadow-md bg-[#ff5d24]">
-                <div className="max-w-7xl mx-auto pr-4">
+                <div className="container mx-auto px-4">
                     <div className="flex items-center justify-between h-16 md:h-20 overflow-hidden">
                         <div className="flex items-center space-x-2">
-                            <div className="relative w-28 h-10 md:w-36 md:h-12 lg:w-40 lg:h-14 h-full sm:scale-1.25 md:scale-1.25 lg:scale-1.4">
+                            <div className="relative w-28 md:w-36 md:h-12 lg:w-40 lg:h-14 h-full transform scale-[1.45]">
                                 <img
                                     src="https://www.habloindia.com/hablologo.png"
                                     alt="HABLO Logo"
@@ -126,9 +129,9 @@ export default function Header() {
                         <div className="hidden md:flex items-center space-x-4">
                             <a
                                 href="tel:+919840488579"
-                                className="flex items-center space-x-2 text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
+                                className="group inline-flex items-center gap-2 bg-white text-[#ff5d24] px-4 py-2 rounded-full font-semibold shadow-sm hover:shadow-md transition-all hover:bg-amber-50"
                             >
-                                <Phone size={18} />
+                                <Phone size={18} className="transition-transform group-hover:scale-110" />
                                 <span>Call Now</span>
                             </a>
                         </div>
@@ -146,7 +149,7 @@ export default function Header() {
                 {/* Mobile Navigation */}
                 {mobileMenuOpen && (
                     <div className="md:hidden bg-white border-t border-gray-200">
-                        <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                        <nav className="max-w-7xl mx-auto px-4 py-4 flex flex-col space-y-4">
                             <button
                                 onClick={() => scrollToSection("home")}
                                 className={`font-medium text-left transition-colors ${
