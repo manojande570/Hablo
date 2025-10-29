@@ -34,7 +34,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="scroll-mt-24 py-20 bg-gradient-to-b from-white to-gray-50">
+        <section id="contact" className="scroll-mt-20 py-20 bg-gradient-to-b from-white to-gray-50">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">

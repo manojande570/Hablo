@@ -39,7 +39,7 @@ export default function Gallery() {
     const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
 
     return (
-        <section id="gallery" className="scroll-mt-45 py-20 bg-gradient-to-b from-gray-50 to-white">
+        <section id="gallery" className="scroll-mt-10 py-20 bg-gradient-to-b from-gray-50 to-white pb-0">
             <div className="container mx-auto px-4">
 
                 <div className="text-center mb-16">

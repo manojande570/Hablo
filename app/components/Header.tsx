@@ -36,7 +36,8 @@ export default function Header() {
         }
     };
 
-    const handleAboutClick = () => {
+    const handleAboutClick =() => {
+        window.history.pushState(null, '', `#about`);
         setShowAboutModal(true);
         setMobileMenuOpen(false);
     };
@@ -68,7 +69,7 @@ export default function Header() {
                                 Home
                             </button>
                             <button
-                                onClick={handleAboutClick}
+                                onClick={()=>handleAboutClick}
                                 className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
                             >
                                 About
