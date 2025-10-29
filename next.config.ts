@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+// import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        domains: ['www.habloindia.com'], // ✅ Allow your logo domain
+    },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
+
