@@ -17,7 +17,7 @@ export default function Contact() {
         const whatsappMessage = `Hello! I'm ${formData.name}%0A%0APhone: ${formData.phone}%0A%0AMessage: ${formData.message}`;
 
         // WhatsApp number (replace with your actual number)
-        const whatsappNumber = '911234567890'; // Format: country code + number (no + or spaces)
+        const whatsappNumber = '919840488579'; // Format: country code + number (no + or spaces)
 
         // Open WhatsApp with pre-filled message
         window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
