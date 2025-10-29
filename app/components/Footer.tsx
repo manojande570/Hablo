@@ -50,7 +50,7 @@ export default function Footer() {
                         <h4 className="font-semibold mb-4">Connect</h4>
                         <div className="flex items-center space-x-4">
                             <a
-                                href="#"
+                                href="https://www.instagram.com/hablo.india/?igsh=NWZqMW1zdjYweGVz&utm_source=qr#"
                                 className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
                             >
                                 <Instagram size={20} />
@@ -63,14 +63,14 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-800 pt-8 text-center">
-                    <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors mb-4">
-                        DOWNLOAD CATALOGUE
-                    </button>
-                    <p className="text-gray-400 text-sm">
-                        © 2024 HABLO. All rights reserved.
-                    </p>
-                </div>
+                {/*<div className="border-t border-gray-800 pt-8 text-center">*/}
+                {/*    <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors mb-4">*/}
+                {/*        DOWNLOAD CATALOGUE*/}
+                {/*    </button>*/}
+                {/*    <p className="text-gray-400 text-sm">*/}
+                {/*        © 2024 HABLO. All rights reserved.*/}
+                {/*    </p>*/}
+                {/*</div>*/}
             </div>
         </footer>
     );

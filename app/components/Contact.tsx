@@ -90,7 +90,7 @@ export default function Contact() {
 
                             <div className="mt-8 pt-8 border-t border-white/20">
                                 <a
-                                    href="https://wa.me/911234567890"
+                                    href="https://wa.me/919840488579"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center space-x-3 bg-white text-amber-600 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"

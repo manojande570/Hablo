@@ -16,9 +16,9 @@ export default function Header() {
     };
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+        <header className="fixed top-0 left-0 right-0 z-50  shadow-md bg-[#ff5d24]">
             <div className="container mx-auto px-4">
-                <div className="flex items-center justify-between py-4">
+                <div className="flex items-center justify-between ">
                     <div className="flex items-center space-x-2">
                         <div className="relative w-28 h-14 md:w-32 md:h-16 lg:w-36 lg:h-18">
                         <Image
@@ -32,27 +32,53 @@ export default function Header() {
                     </div>
 
                     <nav className="hidden md:flex items-center space-x-8">
-                        <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
+                        <button
+                            onClick={() => scrollToSection('home')}
+                            className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
+                        >
                             Home
                         </button>
-                        <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
+                        <button
+                            onClick={() => scrollToSection('about')}
+                            className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
+                        >
                             About
                         </button>
-                        <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
+                        <button
+                            onClick={() => scrollToSection('products')}
+                            className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
+                        >
                             Products
                         </button>
-                        <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
+                        <a
+                            href="https://www.habloindia.com/viewer.html?file=HABLO_JULY2025_CATALOGUE.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
+                        >
+                            Catalogue
+                        </a>
+
+                        <button
+                            onClick={() => scrollToSection('gallery')}
+                            className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
+                        >
                             Gallery
                         </button>
-                        <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
+                        <button
+                            onClick={() => scrollToSection('contact')}
+                            className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
+                        >
                             Contact
                         </button>
                     </nav>
 
+
                     <div className="hidden md:flex items-center space-x-4">
-                        <a href="tel:+911234567890" className="flex items-center space-x-2 text-amber-600 hover:text-amber-700 transition-colors">
+                        <a href="tel:+91 98404 88579"
+                            className="flex items-center space-x-2 text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium">
                             <Phone size={18} />
-                            <span className="font-medium">Call Now</span>
+                            <span>Call Now</span>
                         </a>
                     </div>
 
@@ -87,6 +113,7 @@ export default function Header() {
                             <Phone size={18} />
                             <span>Call Now</span>
                         </a>
+
                     </nav>
                 </div>
             )}
