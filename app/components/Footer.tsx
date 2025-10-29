@@ -2,16 +2,22 @@
 
 import { useState } from 'react';
 import { Instagram, Award, X, Package, Truck } from 'lucide-react';
+import AboutModal from "@/app/components/About-model";
 
 export default function Footer() {
     const [showReturnsModal, setShowReturnsModal] = useState(false);
+    const [showAboutModal, setShowAboutModal] = useState(false);
     const [showShippingModal, setShowShippingModal] = useState(false);
 
     const handleAboutClick = () => {
-        const element = document.getElementById('about');
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+        // const element = document.getElementById('about');
+        // if (element) {
+        //     element.scrollIntoView({ behavior: 'smooth' });
+        // }
+        window.history.pushState(null, "", "#about");
+        // setActiveSection("about");
+        setShowAboutModal(true);
+        // setMobileMenuOpen(false);
     };
 
     const handleContactClick = () => {
@@ -269,7 +275,10 @@ export default function Footer() {
                     </div>
                 </div>
             )}
-
+            <AboutModal
+                isOpen={showAboutModal}
+                onClose={() => setShowAboutModal(false)}
+            />
             <style>{`
                 @keyframes fadeIn {
                     from {
@@ -299,6 +308,7 @@ export default function Footer() {
                     animation: slideUp 0.3s ease-out;
                 }
             `}</style>
+
         </>
     );
 }
