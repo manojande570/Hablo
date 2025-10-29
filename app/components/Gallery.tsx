@@ -18,12 +18,20 @@ const videos = [
         url: 'https://www.youtube.com/watch?v=y_svnRtHR8E',
         embed: 'https://www.youtube.com/embed/y_svnRtHR8E'
     },
+    //https://www.youtube.com/watch?v=2GVQJOebcss
     {
         title: 'Slim box installation video',
         thumbnail: 'https://img.youtube.com/vi/YLp31qQBodg/hqdefault.jpg',
         duration: '1:22',
         url: 'https://www.youtube.com/watch?v=YLp31qQBodg',
         embed: 'https://www.youtube.com/embed/YLp31qQBodg'
+    },
+    {
+        title: 'Modular Kitchen Hardwares & Accessories/Kitchen Hardwares Market in Tamilnadu',
+        thumbnail: 'https://img.youtube.com/vi/2GVQJOebcss/hqdefault.jpg',
+        duration: '16:48',
+        url: 'https://www.youtube.com/watch?v=2GVQJOebcss',
+        embed: 'https://www.youtube.com/embed/2GVQJOebcss'
     }
 ];
 

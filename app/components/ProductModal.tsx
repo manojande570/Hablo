@@ -67,19 +67,19 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
                         {/* Details List */}
                         <div className="mb-6">
-                            <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
-                                <span className="w-1 h-6 bg-blue-600 rounded-full"></span>
-                                Key Features & Specifications
-                            </h3>
+                            {/*<h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-4 flex items-center gap-2">*/}
+                            {/*    <span className="w-1 h-6 bg-blue-600 rounded-full"></span>*/}
+                            {/*    Key Features & Specifications*/}
+                            {/*</h3>*/}
                             <ul className="space-y-3">
                                 {product.details.map((detail, idx) => (
                                     <li
                                         key={idx}
                                         className="flex items-start gap-3 text-slate-700 bg-slate-50 p-3 rounded-lg hover:bg-slate-100 transition-colors"
                                     >
-                    <span className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">
-                      {idx + 1}
-                    </span>
+                    {/*<span className="flex-shrink-0 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold mt-0.5">*/}
+                    {/*  {idx + 1}*/}
+                    {/*</span>*/}
                                         <span className="text-sm md:text-base">{detail}</span>
                                     </li>
                                 ))}
@@ -87,18 +87,18 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                         </div>
 
                         {/* Additional Info */}
-                        <div className="mt-auto pt-6 border-t border-slate-200">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-                                <div className="bg-green-50 p-4 rounded-xl border border-green-200">
-                                    <span className="text-green-700 font-semibold block mb-1">Free Shipping</span>
-                                    <p className="text-green-600">On all orders</p>
-                                </div>
-                                <div className="bg-blue-50 p-4 rounded-xl border border-blue-200">
-                                    <span className="text-blue-700 font-semibold block mb-1">Warranty</span>
-                                    <p className="text-blue-600">1 year guarantee</p>
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className="mt-auto pt-6 border-t border-slate-200">*/}
+                        {/*    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">*/}
+                        {/*        <div className="bg-green-50 p-4 rounded-xl border border-green-200">*/}
+                        {/*            <span className="text-green-700 font-semibold block mb-1">Free Shipping</span>*/}
+                        {/*            <p className="text-green-600">On all orders</p>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="bg-blue-50 p-4 rounded-xl border border-blue-200">*/}
+                        {/*            <span className="text-blue-700 font-semibold block mb-1">Warranty</span>*/}
+                        {/*            <p className="text-blue-600">1 year guarantee</p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>
