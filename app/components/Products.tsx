@@ -867,9 +867,18 @@ export default function ProductsSection() {
 
     return (
         <div id="products" className="scroll-mt-24">
-            <div className="py-8 md:py-16 lg:py-20 px-4 md:px-8 lg:px-12 bg-gradient-to-br from-slate-50 via-white to-slate-50 min-h-screen">
+            <div className="relative overflow-hidden py-8 md:py-16 lg:py-20 px-4 md:px-8 lg:px-12 bg-slate-50 min-h-screen">
+                <div
+                    aria-hidden
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                        backgroundImage: "radial-gradient(rgba(255,93,36,0.22) 1px, transparent 1px)",
+                        backgroundSize: "16px 16px",
+                        backgroundPosition: "0 0"
+                    }}
+                />
                 {/* Header Section */}
-                <div className="max-w-7xl mx-auto mb-8 md:mb-12">
+                <div className="relative max-w-7xl mx-auto mb-8 md:mb-12">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-3 md:mb-4">
                         Our Products
                     </h1>
@@ -978,14 +987,14 @@ export default function ProductsSection() {
             {/* Sub Product Modal */}
             {selectedSubProduct && (
                 <div
-                    className="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center animate-fadeIn"
+                    className="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-0 md:p-6 animate-fadeIn"
                     onClick={() => setSelectedSubProduct(null)}
                 >
                     <div
-                        className="bg-white w-full h-full overflow-y-auto animate-slideUp"
+                        className="bg-white md:rounded-3xl shadow-2xl w-screen h-screen max-w-none max-h-none md:max-w-4xl md:h-auto md:max-h-[90vh] overflow-y-auto animate-slideUp"
                         onClick={(e) => e.stopPropagation()}
                     >
-                    {/* Header */}
+                        {/* Header */}
                         <div className="sticky top-0 bg-white border-b border-slate-200 px-4 md:px-6 py-4 flex items-center justify-between z-10 rounded-t-3xl">
                             <div className="flex items-center gap-2">
                                 <Info className="w-5 h-5 text-blue-600" />

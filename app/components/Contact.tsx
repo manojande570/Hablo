@@ -34,22 +34,22 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="scroll-mt-20 py-20 bg-gradient-to-b from-white to-gray-50">
-            <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        <section id="contact" className="scroll-mt-24 py-12 md:py-20 bg-gradient-to-b from-white to-gray-50">
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="text-center mb-10 md:mb-16">
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-3 md:mb-4">
                         Get In Touch
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto">
                         Ready to transform your kitchen? Contact us today for a free consultation
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto">
                     <div>
                         <div
-                            className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 md:p-12 text-white shadow-2xl">
-                            <h3 className="text-3xl font-bold mb-8">Contact Information</h3>
+                            className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 md:p-12 text-white shadow-2xl">
+                            <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Contact Information</h3>
 
                             <div className="space-y-6">
                                 <div className="flex items-start space-x-4">
@@ -115,8 +115,8 @@ export default function Contact() {
                     </div>
 
                     <div>
-                        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border border-gray-200">
-                            <h3 className="text-3xl font-bold text-gray-800 mb-8">Send Us a Message</h3>
+                        <div className="bg-white rounded-2xl p-6 md:p-12 shadow-xl border border-gray-200">
+                            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 md:mb-8">Send Us a Message</h3>
 
                             <div className="space-y-6">
                                 <div>
@@ -169,7 +169,7 @@ export default function Contact() {
 
                                 <button
                                     onClick={handleSubmit}
-                                    className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
+                                    className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
                                 >
                                     <Send size={20}/>
                                     <span>Send via WhatsApp</span>

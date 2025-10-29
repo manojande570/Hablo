@@ -33,11 +33,11 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="bg-gray-900 text-white py-12">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <footer className="bg-gray-900 text-white py-10 md:py-12">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-6 md:mb-8">
                         <div>
-                            <div className="relative w-28 h-14 md:w-32 md:h-16 lg:w-36 lg:h-18">
+                            <div className="relative w-28 h-10 md:w-36 md:h-12 lg:w-40 lg:h-14">
                                 <img
                                     src="https://www.habloindia.com/hablologo.png"
                                     alt="HABLO Logo"
@@ -50,7 +50,7 @@ export default function Footer() {
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-4">About</h4>
+                            <h4 className="font-semibold mb-3 md:mb-4">About</h4>
                             <ul className="space-y-2">
                                 <li>
                                     <button
@@ -72,7 +72,7 @@ export default function Footer() {
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-4">Policies</h4>
+                            <h4 className="font-semibold mb-3 md:mb-4">Policies</h4>
                             <ul className="space-y-2">
                                 <li>
                                     <button
@@ -94,20 +94,20 @@ export default function Footer() {
                         </div>
 
                         <div>
-                            <h4 className="font-semibold mb-4">Connect</h4>
-                            <div className="flex items-center space-x-4">
+                            <h4 className="font-semibold mb-3 md:mb-4">Connect</h4>
+                            <div className="flex items-center space-x-3 md:space-x-4">
                                 <a
                                     href="https://www.instagram.com/hablo.india/?igsh=NWZqMW1zdjYweGVz&utm_source=qr#"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
+                                    className="bg-gray-800 p-2.5 md:p-3 rounded-full hover:bg-gray-700 transition-colors"
                                 >
                                     <Instagram size={20} />
                                 </a>
                             </div>
-                            <div className="mt-6 flex items-center space-x-2">
-                                <Award size={24} className="text-gray-400" />
-                                <span className="text-gray-400">ISO Certified</span>
+                            <div className="mt-5 md:mt-6 flex items-center space-x-2">
+                                <Award size={20} className="text-gray-400" />
+                                <span className="text-gray-400 text-sm">ISO Certified</span>
                             </div>
                         </div>
                     </div>

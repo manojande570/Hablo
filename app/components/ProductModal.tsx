@@ -19,11 +19,11 @@ interface ProductModalProps {
 export default function ProductModal({ product, onClose }: ProductModalProps) {
     return (
         <div
-            className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn"
+            className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-0 md:p-4 animate-fadeIn"
             onClick={onClose}
         >
             <div
-                className="bg-white rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto animate-slideUp"
+                className="bg-white md:rounded-3xl shadow-2xl w-screen h-screen max-w-none max-h-none md:max-w-4xl md:h-auto md:max-h-[90vh] overflow-y-auto animate-slideUp"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Header */}

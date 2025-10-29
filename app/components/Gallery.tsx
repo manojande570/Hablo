@@ -39,29 +39,29 @@ export default function Gallery() {
     const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
 
     return (
-        <section id="gallery" className="scroll-mt-10 py-20 bg-gradient-to-b from-gray-50 to-white pb-0">
-            <div className="container mx-auto px-4">
+        <section id="gallery" className="scroll-mt-24 py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+            <div className="max-w-7xl mx-auto px-4">
 
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                <div className="text-center mb-10 md:mb-16">
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-3 md:mb-4">
                         Gallery & Videos
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto">
                         Explore our installation guides and video tutorials
                     </p>
                 </div>
 
                 {/* ✅ Installation Videos */}
-                <div className="mb-20">
-                    <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+                <div className="mb-10 md:mb-20">
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 md:mb-8 text-center">
                         Installation Videos
                     </h3>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
                         {videos.map((video, index) => (
                             <div
                                 key={index}
-                                className="relative group cursor-pointer rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                                className="relative group cursor-pointer rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 md:hover:-translate-y-2"
                                 onClick={() => setSelectedVideo(index)}
                             >
                                 <div className="aspect-video relative">
@@ -73,8 +73,8 @@ export default function Gallery() {
                                 </div>
 
                                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
-                                    <div className="bg-red-600 rounded-full p-4 group-hover:scale-110 transition-transform shadow-lg">
-                                        <Play className="w-12 h-12 text-white" fill="white" />
+                                    <div className="bg-red-600 rounded-full p-3 md:p-4 group-hover:scale-110 transition-transform shadow-lg">
+                                        <Play className="w-10 h-10 md:w-12 md:h-12 text-white" fill="white" />
                                     </div>
                                 </div>
 
