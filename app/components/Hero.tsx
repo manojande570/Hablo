@@ -39,19 +39,25 @@ export function DownloadCatalogueIcon() {
                     <path id="bottom-curve" d="M 10,50 A 40,40 0 0,0 90,50" fill="none" />
                 </defs>
 
-                <text fontSize="13" fill="#0a2540" fontWeight="600">
-                    <textPath href="#top-curve" startOffset="50%" textAnchor="middle">
-                        DOWNLOAD
+                <text fontSize="13" fill="#0a2540" fontWeight="600" style={{ letterSpacing: '0.8px' }}>
+                    <textPath
+                        href="#top-curve"
+                        startOffset="50%"
+                        textAnchor="middle"
+                        lengthAdjust="spacingAndGlyphs"
+                        textLength="110"
+                    >
+                        {"  DOWNLOAD  "}
                     </textPath>
                     <textPath
                         href="#bottom-curve"
                         startOffset="50%"
                         textAnchor="middle"
                         dy="5"
-                        textLength="80"
                         lengthAdjust="spacingAndGlyphs"
+                        textLength="110"
                     >
-                        CATALOGUE
+                        {"  CATALOGUE  "}
                     </textPath>
                 </text>
             </svg>
