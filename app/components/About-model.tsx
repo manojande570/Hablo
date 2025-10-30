@@ -25,11 +25,11 @@ export default function AboutModal({ isOpen, onClose }: AboutModalProps) {
             onClick={() => onClose()}
         >
             <div
-                className="bg-white w-full h-full md:rounded-3xl md:max-w-3xl md:max-h-[90vh] md:overflow-y-auto md:animate-slideUp shadow-2xl"
+                className="bg-white w-full h-full md:rounded-3xl md:max-w-3xl md:max-h-[90vh] overflow-y-auto animate-slideUp shadow-2xl"
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Header */}
-                <div className="sticky top-0 bg-gradient-to-r from-[#ff5d24] to-orange-600 px-6 py-8 flex items-center justify-between z-10 lg:rounded-t-3xl">
+                <div className="sticky top-0 bg-gradient-to-r from-[#ff5d24] to-orange-600 px-6 py-3 flex items-center justify-between z-10 lg:rounded-t-3xl">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                             <Info className="w-6 h-6 text-white" />

@@ -989,7 +989,7 @@ export default function ProductsSection() {
                         <button
                             onClick={() => handleScroll('left')}
                             type="button"
-                            className="md:hidden absolute top-[31%] left-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
+                            className="md:hidden absolute top-[240px] left-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
                             aria-label="Scroll left"
                         >
                             <ChevronLeft size={32} className="text-[#ff5d24]" />
@@ -999,7 +999,7 @@ export default function ProductsSection() {
                         <button
                             onClick={() => handleScroll('right')}
                             type="button"
-                            className="md:hidden absolute top-[31%] right-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
+                            className="md:hidden absolute top-[240px] right-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
                             aria-label="Scroll right"
                         >
                             <ChevronRight size={32} className="text-[#ff5d24]" />
