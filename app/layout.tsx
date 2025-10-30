@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description:
         "Premium modular kitchen accessories and solutions by HABLO. Redefine your space with elegance and functionality.",
     icons: {
-        icon: "/favicon.png", // Browser tab icon
+        icon: "https://taupe-cajeta-e0f0c7.netlify.app/favicon.png", // Browser tab icon
     },
     openGraph: {
         title: "HABLO - Modular Kitchen Accessories",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         siteName: "HABLO",
         images: [
             {
-                url: "/favicon.png", // ✅ use same icon for sharing
+                url: "https://taupe-cajeta-e0f0c7.netlify.app/favicon.png", // ✅ use same icon for sharing
                 width: 512, // adjust if your favicon is smaller/larger
                 height: 512,
                 alt: "HABLO Logo",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         title: "HABLO - Modular Kitchen Accessories",
         description:
             "Transform your kitchen with premium accessories from HABLO.",
-        images: ["/favicon.png"], // ✅ same here
+        images: ["https://taupe-cajeta-e0f0c7.netlify.app/favicon.png"], // ✅ same here
     },
 };
 
