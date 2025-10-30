@@ -153,9 +153,14 @@ export default function Hero() {
                     <img
                         src={slide.image}
                         alt={slide.alt}
-                        className="w-full h-full object-cover object-center"
+                        className={`w-full h-full object-cover ${
+                            index === 1
+                                ? "object-[center_40%] md:object-[center_40%]" // adjust only 2nd image
+                                : "object-center"
+                        }`}
                         draggable={false}
                     />
+
                     <div className="absolute inset-0 bg-black/30"></div>
                 </div>
             ))}

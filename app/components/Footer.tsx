@@ -37,7 +37,7 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-6 md:mb-8">
                         <div>
-                            <div className="relative w-28 h-10 md:w-36 md:h-12 lg:w-40 lg:h-14">
+                            <div className="relative w-28 md:w-36 md:h-12 lg:w-40 lg:h-14">
                                 <img
                                     src="https://www.habloindia.com/hablologo.png"
                                     alt="HABLO Logo"
