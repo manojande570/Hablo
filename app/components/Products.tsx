@@ -1025,7 +1025,7 @@ export default function ProductsSection() {
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Header */}
-                        <div className="sticky top-0 bg-white border-b border-slate-200 px-4 md:px-6 py-4 flex items-center justify-between z-10 rounded-t-3xl pt-8">
+                        <div className="sticky top-0 bg-white border-b border-slate-200 px-4 md:px-6 py-4 flex items-center justify-between z-10 rounded-t-3xl pt-3">
                             <div className="flex items-center gap-2">
                                 <Info className="w-5 h-5 text-blue-600" />
                                 <span className="text-lg font-semibold text-slate-900">Product Details</span>
