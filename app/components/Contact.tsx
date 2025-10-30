@@ -45,10 +45,10 @@ export default function Contact() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto">
-                    <div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto items-stretch">
+                    <div className="h-full">
                         <div
-                            className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 md:p-12 text-white shadow-2xl">
+                            className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 md:p-12 text-white shadow-2xl h-full">
                             <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Contact Information</h3>
 
                             <div className="space-y-6">
@@ -114,8 +114,8 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div>
-                        <div className="bg-white rounded-2xl p-6 md:p-12 shadow-xl border border-gray-200">
+                    <div className="h-full">
+                        <div className="bg-white rounded-2xl p-6 md:p-12 shadow-xl border border-gray-200 h-full">
                             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 md:mb-8">Send Us a Message</h3>
 
                             <div className="space-y-6">

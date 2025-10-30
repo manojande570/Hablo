@@ -33,29 +33,34 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="bg-gray-900 text-white py-10 md:py-12">
+            <footer className="relative bg-gray-950 text-white pt-0 pb-10 md:pb-12 mt-8">
+                {/* Top Brand Bar */}
+                <div className="h-2 w-full bg-gradient-to-r from-[#ff5d24] to-[#ff8444] mb-6 rounded-t-2xl shadow-md"></div>
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-6 md:mb-8">
-                        <div>
-                            <div className="relative w-28 md:w-36 md:h-12 lg:w-40 lg:h-14">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 md:gap-10 mb-8">
+                        <div className="flex flex-col gap-3 items-start text-left">
+                            <div className="relative w-32 h-14 md:w-40 md:h-20 lg:w-48 lg:h-24 mb-3 md:mb-6">
                                 <img
                                     src="https://www.habloindia.com/hablologo.png"
                                     alt="HABLO Logo"
-                                    className="object-contain w-full h-full"
+                                    className="object-contain w-full h-full drop-shadow-xl"
                                 />
                             </div>
-                            {/*<p className="text-gray-400">*/}
-                            {/*    Premium Modular Kitchen Accessories*/}
-                            {/*</p>*/}
+                            <div className="text-gray-400 text-sm leading-6">
+                              Premium Modular Kitchen Accessories<br/>
+                              ISO 9001:2015 Certified
+                              <div className="mt-2">
+                                <span className="inline-block bg-orange-400/90 text-white font-bold px-3 py-1 rounded-full text-xs md:text-sm shadow align-middle">ISO Certified</span>
+                              </div>
+                            </div>
                         </div>
-
                         <div>
-                            <h4 className="font-semibold mb-3 md:mb-4">About</h4>
+                            <h4 className="font-bold mb-3 md:mb-4">About & Support</h4>
                             <ul className="space-y-2">
                                 <li>
                                     <button
                                         onClick={handleAboutClick}
-                                        className="text-gray-400 hover:text-white transition-colors"
+                                        className="text-gray-400 text-base font-medium py-1 hover:text-orange-300 transition-colors w-full text-left"
                                     >
                                         About Us
                                     </button>
@@ -63,51 +68,59 @@ export default function Footer() {
                                 <li>
                                     <button
                                         onClick={handleContactClick}
-                                        className="text-gray-400 hover:text-white transition-colors"
+                                        className="text-gray-400 text-base font-medium py-1 hover:text-orange-300 transition-colors w-full text-left"
                                     >
                                         Contact Us
                                     </button>
                                 </li>
                             </ul>
                         </div>
-
                         <div>
-                            <h4 className="font-semibold mb-3 md:mb-4">Policies</h4>
+                            <h4 className="font-bold mb-3 md:mb-4">Quick Links</h4>
+                            <ul className="space-y-2">
+                                <li><a href="#home" className="text-gray-400 text-base font-medium py-1 hover:text-orange-300 transition-colors w-full text-left">Home</a></li>
+                                <li><a href="#about" className="text-gray-400 text-base font-medium py-1 hover:text-orange-300 transition-colors w-full text-left">About</a></li>
+                                <li><a href="#products" className="text-gray-400 text-base font-medium py-1 hover:text-orange-300 transition-colors w-full text-left">Products</a></li>
+                                <li><a href="https://www.habloindia.com/viewer.html?file=HABLO_JULY2025_CATALOGUE.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-400 text-base font-medium py-1 hover:text-orange-300 transition-colors w-full text-left">Catalogue</a></li>
+                                <li><a href="#gallery" className="text-gray-400 text-base font-medium py-1 hover:text-orange-300 transition-colors w-full text-left">Gallery</a></li>
+                                <li><a href="#contact" className="text-gray-400 text-base font-medium py-1 hover:text-orange-300 transition-colors w-full text-left">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="font-bold mb-3 md:mb-4">Policies</h4>
                             <ul className="space-y-2">
                                 <li>
                                     <button
                                         onClick={() => setShowReturnsModal(true)}
-                                        className="text-gray-400 hover:text-white transition-colors"
+                                        className="text-gray-400 hover:text-orange-300 font-medium transition-colors w-full text-left py-1"
                                     >
-                                        Returns & Replacement Policy
+                                        Returns & Replacement
                                     </button>
                                 </li>
                                 <li>
                                     <button
                                         onClick={() => setShowShippingModal(true)}
-                                        className="text-gray-400 hover:text-white transition-colors"
+                                        className="text-gray-400 hover:text-orange-300 font-medium transition-colors w-full text-left py-1"
                                     >
                                         Shipping & Delivery
                                     </button>
                                 </li>
                             </ul>
                         </div>
-
                         <div>
-                            <h4 className="font-semibold mb-3 md:mb-4">Connect</h4>
-                            <div className="flex items-center space-x-3 md:space-x-4">
+                            <h4 className="font-bold mb-3 md:mb-4">Connect</h4>
+                            <div className="flex items-center space-x-2 md:space-x-3">
                                 <a
                                     href="https://www.instagram.com/hablo.india/?igsh=NWZqMW1zdjYweGVz&utm_source=qr#"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-gray-800 p-2.5 md:p-3 rounded-full hover:bg-gray-700 transition-colors"
+                                    className="bg-white/10 hover:bg-[#ff5d24] p-2.5 md:p-3 rounded-full text-orange-300 hover:text-white transition-all shadow"
                                 >
                                     <Instagram size={20} />
                                 </a>
                             </div>
-                            <div className="mt-5 md:mt-6 flex items-center space-x-2">
-                                <Award size={20} className="text-gray-400" />
-                                <span className="text-gray-400 text-sm">ISO Certified</span>
+                            <div className="mt-5 md:mt-6 flex items-center justify-center md:justify-start gap-2">
+                                <Award size={20} className="text-orange-400" />
                             </div>
                         </div>
                     </div>
@@ -309,6 +322,10 @@ export default function Footer() {
                 }
             `}</style>
 
+            {/* Divider & copyright */}
+            <div className="border-t border-gray-800/80 mt-8 pt-6 text-center text-gray-500 text-sm">
+                © {new Date().getFullYear()} HABLO India. All rights reserved.
+            </div>
         </>
     );
 }

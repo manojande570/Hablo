@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X, Info } from 'lucide-react';
 
 interface SubProduct {
@@ -849,20 +849,27 @@ export default function ProductsSection() {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [selectedSubProduct, setSelectedSubProduct] = useState<SubProduct | null>(null);
     const [expandedProduct, setExpandedProduct] = useState<number | null>(null);
+    const [scrollIndex, setScrollIndex] = useState(0);
 
-    const scroll = (direction: 'left' | 'right') => {
-        if (scrollContainerRef.current) {
-            const scrollAmount = 400;
-            const newScrollPosition =
-                direction === 'left'
-                    ? scrollContainerRef.current.scrollLeft - scrollAmount
-                    : scrollContainerRef.current.scrollLeft + scrollAmount;
-
-            scrollContainerRef.current.scrollTo({
-                left: newScrollPosition,
-                behavior: 'smooth'
-            });
-        }
+    function handleScroll(direction: 'left' | 'right') {
+        if (!scrollContainerRef.current) return;
+        const card = scrollContainerRef.current.querySelector('div[data-productcard]');
+        if (!card) return;
+        const cardWidth = card.clientWidth;
+        let newIndex = scrollIndex + (direction === 'right' ? 1 : -1);
+        newIndex = Math.max(0, Math.min(mainProducts.length - 1, newIndex));
+        setScrollIndex(newIndex);
+        scrollContainerRef.current.scrollTo({ left: cardWidth * newIndex, behavior: 'smooth' });
+    }
+    // Keep padding correct & update index on manual scroll
+    const handleManualScroll = () => {
+        if (!scrollContainerRef.current) return;
+        const scrollLeft = scrollContainerRef.current.scrollLeft;
+        const card = scrollContainerRef.current.querySelector('div[data-productcard]');
+        if (!card) return;
+        const cardWidth = card.clientWidth;
+        const idx = Math.round(scrollLeft / cardWidth);
+        setScrollIndex(idx);
     };
 
     return (
@@ -910,12 +917,14 @@ export default function ProductsSection() {
                     {/* Products Scroll Container */}
                     <div
                         ref={scrollContainerRef}
-                        className="flex gap-4 md:gap-6 overflow-x-auto scroll-smooth pb-4 scrollbar-hide snap-x snap-mandatory"
+                        className="flex gap-0 md:gap-6 overflow-x-auto scroll-smooth pb-4 scrollbar-hide snap-x snap-mandatory -mx-4 md:mx-0"
+                        onScroll={handleManualScroll}
                     >
                         {mainProducts.map((product) => (
                             <div
                                 key={product.id}
-                                className="flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[400px] lg:w-[450px] snap-center"
+                                data-productcard
+                                className="flex-shrink-0 w-[100vw] px-4 md:px-0 md:w-[400px] lg:w-[450px] snap-center"
                             >
                                 {/* Main Product Card */}
                                 <div className="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-100">
@@ -975,6 +984,27 @@ export default function ProductsSection() {
                         ))}
                     </div>
 
+                    {/* Mobile left/right arrow controls */}
+                    {scrollIndex > 0 && (
+                        <button
+                            onClick={() => handleScroll('left')}
+                            type="button"
+                            className="md:hidden absolute top-1/2 left-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
+                            aria-label="Scroll left"
+                        >
+                            <ChevronLeft size={32} className="text-[#ff5d24]" />
+                        </button>
+                    )}
+                    {scrollIndex < mainProducts.length - 1 && (
+                        <button
+                            onClick={() => handleScroll('right')}
+                            type="button"
+                            className="md:hidden absolute top-1/2 right-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
+                            aria-label="Scroll right"
+                        >
+                            <ChevronRight size={32} className="text-[#ff5d24]" />
+                        </button>
+                    )}
                     {/* Mobile scroll hint */}
                     <div className="md:hidden text-center mt-6">
                         <p className="text-sm text-slate-500">

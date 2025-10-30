@@ -62,7 +62,7 @@ export default function Header() {
                         <nav className="hidden md:flex items-center space-x-8">
                             <button
                                 onClick={() => scrollToSection("home")}
-                                className={`text-white pb-1 transition-all font-medium ${
+                                className={`text-white pb-1 transition-all font-bold ${
                                     activeSection === "home"
                                         ? "border-b-2 border-white"
                                         : "hover:border-b-2 hover:border-white"
@@ -73,7 +73,7 @@ export default function Header() {
 
                             <button
                                 onClick={handleAboutClick}
-                                className={`text-white pb-1 transition-all font-medium ${
+                                className={`text-white pb-1 transition-all font-bold ${
                                     activeSection === "about"
                                         ? "border-b-2 border-white"
                                         : "hover:border-b-2 hover:border-white"
@@ -84,7 +84,7 @@ export default function Header() {
 
                             <button
                                 onClick={() => scrollToSection("products")}
-                                className={`text-white pb-1 transition-all font-medium ${
+                                className={`text-white pb-1 transition-all font-bold ${
                                     activeSection === "products"
                                         ? "border-b-2 border-white"
                                         : "hover:border-b-2 hover:border-white"
@@ -97,14 +97,14 @@ export default function Header() {
                                 href="https://www.habloindia.com/viewer.html?file=HABLO_JULY2025_CATALOGUE.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-medium"
+                                className="text-white hover:border-b-2 hover:border-white pb-1 transition-all font-bold"
                             >
                                 Catalogue
                             </a>
 
                             <button
                                 onClick={() => scrollToSection("gallery")}
-                                className={`text-white pb-1 transition-all font-medium ${
+                                className={`text-white pb-1 transition-all font-bold ${
                                     activeSection === "gallery"
                                         ? "border-b-2 border-white"
                                         : "hover:border-b-2 hover:border-white"
@@ -115,7 +115,7 @@ export default function Header() {
 
                             <button
                                 onClick={() => scrollToSection("contact")}
-                                className={`text-white pb-1 transition-all font-medium ${
+                                className={`text-white pb-1 transition-all font-bold ${
                                     activeSection === "contact"
                                         ? "border-b-2 border-white"
                                         : "hover:border-b-2 hover:border-white"

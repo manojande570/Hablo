@@ -73,8 +73,10 @@ export default function Gallery() {
                                 </div>
 
                                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all flex items-center justify-center">
-                                    <div className="bg-red-600 rounded-full p-3 md:p-4 group-hover:scale-110 transition-transform shadow-lg">
-                                        <Play className="w-10 h-10 md:w-12 md:h-12 text-white" fill="white" />
+                                    <div className="flex items-center justify-center group-hover:scale-110 transition-transform">
+                                        <svg width="28" height="28" viewBox="0 0 28 28" className="drop-shadow-md" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <polygon points="9,6 22,14 9,22" fill="#fff"/>
+                                        </svg>
                                     </div>
                                 </div>
 
