@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X, Info } from 'lucide-react';
 
 interface SubProduct {
@@ -1017,25 +1017,27 @@ export default function ProductsSection() {
             {/* Sub Product Modal */}
             {selectedSubProduct && (
                 <div
-                    className="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-0 md:p-6 animate-fadeIn"
+                    className="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center md:p-4 animate-fadeIn"
                     onClick={() => setSelectedSubProduct(null)}
                 >
                     <div
-                        className="bg-white md:rounded-3xl shadow-2xl w-screen h-screen max-w-none max-h-none md:max-w-4xl md:h-auto md:max-h-[90vh] overflow-y-auto animate-slideUp"
+                        className="bg-white w-full h-full md:rounded-3xl md:max-w-3xl md:max-h-[90vh] overflow-y-auto animate-slideUp shadow-2xl"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Header */}
-                        <div className="sticky top-0 bg-white border-b border-slate-200 px-4 md:px-6 py-4 flex items-center justify-between z-10 rounded-t-3xl pt-3">
-                            <div className="flex items-center gap-2">
-                                <Info className="w-5 h-5 text-blue-600" />
-                                <span className="text-lg font-semibold text-slate-900">Product Details</span>
+                        <div className="sticky top-0 bg-gradient-to-r from-[#ff5d24] to-orange-600 px-6 py-3 flex items-center justify-between z-10 lg:rounded-t-3xl">
+                            <div className="flex items-center gap-3">
+                                {/*<div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">*/}
+                                {/*    <Info className="w-6 h-6 text-white" />*/}
+                                {/*</div>*/}
+                                <span className="text-2xl font-bold text-white">Product Details</span>
                             </div>
                             <button
                                 onClick={() => setSelectedSubProduct(null)}
-                                className="rounded-full p-2 hover:bg-slate-100 transition-colors"
+                                className="rounded-full p-2 hover:bg-white/20 transition-colors"
                                 aria-label="Close modal"
                             >
-                                <X className="w-6 h-6 text-slate-600" />
+                                <X className="w-6 h-6 text-white" />
                             </button>
                         </div>
 
