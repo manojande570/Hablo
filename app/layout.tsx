@@ -31,6 +31,7 @@ export const metadata: Metadata = {
                 width: 512, // adjust if your favicon is smaller/larger
                 height: 512,
                 alt: "HABLO Logo",
+                type: "image/png",
             },
         ],
         type: "website",
