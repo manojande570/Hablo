@@ -898,7 +898,7 @@ export default function ProductsSection() {
                 <div className="relative max-w-7xl mx-auto">
                     {/* Left Arrow */}
                     <button
-                        onClick={() => scroll('left')}
+                        onClick={() => handleScroll('left')}
                         className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 bg-white rounded-full p-3 shadow-xl hover:shadow-2xl transition-all hover:scale-110 border border-slate-200"
                         aria-label="Scroll left"
                     >
@@ -907,7 +907,7 @@ export default function ProductsSection() {
 
                     {/* Right Arrow */}
                     <button
-                        onClick={() => scroll('right')}
+                        onClick={() => handleScroll('right')}
                         className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 bg-white rounded-full p-3 shadow-xl hover:shadow-2xl transition-all hover:scale-110 border border-slate-200"
                         aria-label="Scroll right"
                     >
