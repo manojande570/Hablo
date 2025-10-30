@@ -128,15 +128,15 @@ export default function Footer() {
             {/* Returns & Replacement Modal */}
             {showReturnsModal && (
                 <div
-                    className="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn"
+                    className="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center md:p-4 animate-fadeIn"
                     onClick={() => setShowReturnsModal(false)}
                 >
                     <div
-                        className="bg-white rounded-3xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto animate-slideUp"
+                        className="bg-white w-full h-full md:rounded-3xl md:max-w-3xl md:max-h-[90vh] md:overflow-y-auto md:animate-slideUp shadow-2xl"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Header */}
-                        <div className="sticky top-0 bg-gradient-to-r from-[#ff5d24] to-orange-600 px-6 py-5 flex items-center justify-between z-10 rounded-t-3xl">
+                        <div className="sticky top-0 bg-gradient-to-r from-[#ff5d24] to-orange-600 px-6 py-8 flex items-center justify-between z-10 lg:rounded-t-3xl">
                             <div className="flex items-center gap-3">
                                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                                     <Package className="w-6 h-6 text-white" />
@@ -206,15 +206,15 @@ export default function Footer() {
             {/* Shipping & Delivery Modal */}
             {showShippingModal && (
                 <div
-                    className="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn"
+                    className="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center md:p-4 animate-fadeIn"
                     onClick={() => setShowShippingModal(false)}
                 >
                     <div
-                        className="bg-white rounded-3xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto animate-slideUp"
+                        className="bg-white w-full h-full md:rounded-3xl md:max-w-3xl md:max-h-[90vh] md:overflow-y-auto md:animate-slideUp shadow-2xl"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Header */}
-                        <div className="sticky top-0 bg-gradient-to-r from-[#ff5d24] to-orange-600 px-6 py-5 flex items-center justify-between z-10 rounded-t-3xl">
+                        <div className="sticky top-0 bg-gradient-to-r from-[#ff5d24] to-orange-600 px-6 py-8 flex items-center justify-between z-10 lg:rounded-t-3xl">
                             <div className="flex items-center gap-3">
                                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                                     <Truck className="w-6 h-6 text-white" />

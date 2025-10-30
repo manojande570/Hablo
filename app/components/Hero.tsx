@@ -206,7 +206,7 @@ export default function Hero() {
 
                 {/* WhatsApp */}
                 <a
-                    href="https://wa.me/919840488579"
+                    href="https://wa.me/919840488579?text=I%20am%20interested%20in%20your%20brand%20HABLO,%20I%20would%20like%20to%20enquire%20about%20it."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-500 hover:bg-green-600 text-white w-[60px] h-[60px] rounded-full shadow-lg flex items-center justify-center transition transform hover:scale-110"

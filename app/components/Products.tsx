@@ -989,7 +989,7 @@ export default function ProductsSection() {
                         <button
                             onClick={() => handleScroll('left')}
                             type="button"
-                            className="md:hidden absolute top-1/2 left-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
+                            className="md:hidden absolute top-[31%] left-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
                             aria-label="Scroll left"
                         >
                             <ChevronLeft size={32} className="text-[#ff5d24]" />
@@ -999,7 +999,7 @@ export default function ProductsSection() {
                         <button
                             onClick={() => handleScroll('right')}
                             type="button"
-                            className="md:hidden absolute top-1/2 right-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
+                            className="md:hidden absolute top-[31%] right-2 -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-2 border border-orange-100 hover:bg-amber-100 hover:shadow-xl transition-all"
                             aria-label="Scroll right"
                         >
                             <ChevronRight size={32} className="text-[#ff5d24]" />
@@ -1025,7 +1025,7 @@ export default function ProductsSection() {
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Header */}
-                        <div className="sticky top-0 bg-white border-b border-slate-200 px-4 md:px-6 py-4 flex items-center justify-between z-10 rounded-t-3xl">
+                        <div className="sticky top-0 bg-white border-b border-slate-200 px-4 md:px-6 py-4 flex items-center justify-between z-10 rounded-t-3xl pt-8">
                             <div className="flex items-center gap-2">
                                 <Info className="w-5 h-5 text-blue-600" />
                                 <span className="text-lg font-semibold text-slate-900">Product Details</span>
