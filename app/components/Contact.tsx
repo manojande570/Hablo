@@ -48,7 +48,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto items-stretch">
                     <div className="h-full">
                         <div
-                            className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 md:p-12 text-white shadow-2xl h-full">
+                            className="bg-gradient-to-br from-amber-500 to-[#ff5d24] rounded-2xl p-6 md:p-12 text-white shadow-2xl h-full">
                             <h3 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Contact Information</h3>
 
                             <div className="space-y-6">
@@ -169,7 +169,7 @@ export default function Contact() {
 
                                 <button
                                     onClick={handleSubmit}
-                                    className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
+                                    className="w-full bg-gradient-to-r from-amber-500 to-[#ff5d24] hover:from-amber-600 hover:to-orange-700 text-white py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
                                 >
                                     <Send size={20}/>
                                     <span>Send via WhatsApp</span>

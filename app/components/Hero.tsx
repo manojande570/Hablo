@@ -29,13 +29,13 @@ export function DownloadCatalogueIcon() {
             <img
                 src="https://www.habloindia.com/catalogue.png"
                 alt="Catalogue"
-                className="w-7 h-7"
+                className="w-5 h-5"
             />
 
             {/* Circular Text */}
             <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full">
                 <defs>
-                    <path id="top-curve" d="M 10,50 A 40,40 0 0,1 90,50" fill="none" />
+                    <path id="top-curve" d="M 10,50 A 45,65 0 0,1 90,50" fill="none" />
                     <path id="bottom-curve" d="M 10,50 A 40,40 0 0,0 90,50" fill="none" />
                 </defs>
 

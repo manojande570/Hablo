@@ -57,7 +57,7 @@ export default function WhyUs() {
                                 key={index}
                                 className="bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 md:hover:-translate-y-2 border border-gray-100"
                             >
-                                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center mb-5 md:mb-6">
+                                <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-amber-500 to-[#ff5d24] rounded-lg flex items-center justify-center mb-5 md:mb-6">
                                     <Icon className="text-white" size={28} />
                                 </div>
                                 <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2 md:mb-3">
@@ -71,7 +71,7 @@ export default function WhyUs() {
                     })}
                 </div>
 
-                <div className="mt-10 md:mt-16 bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl p-8 md:p-12 text-center text-white shadow-2xl">
+                <div className="mt-10 md:mt-16 bg-gradient-to-r from-amber-500 to-[#ff5d24] rounded-2xl p-8 md:p-12 text-center text-white shadow-2xl">
                     <h3 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4">
                         Trusted by 10,000+ Happy Customers
                     </h3>

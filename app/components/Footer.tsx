@@ -49,7 +49,8 @@ export default function Footer() {
                             <div className="text-gray-400 text-sm leading-6">
                               Premium Modular Kitchen Accessories<br/>
                               ISO 9001:2015 Certified
-                              <div className="mt-2">
+                              <div className="mt-2 flex items-center gap-2">
+                              <Award size={20} className="text-orange-400" />
                                 <span className="inline-block bg-orange-400/90 text-white font-bold px-3 py-1 rounded-full text-xs md:text-sm shadow align-middle">ISO Certified</span>
                               </div>
                             </div>
@@ -118,9 +119,6 @@ export default function Footer() {
                                 >
                                     <Instagram size={20} />
                                 </a>
-                            </div>
-                            <div className="mt-5 md:mt-6 flex items-center justify-center md:justify-start gap-2">
-                                <Award size={20} className="text-orange-400" />
                             </div>
                         </div>
                     </div>
@@ -323,9 +321,9 @@ export default function Footer() {
             `}</style>
 
             {/* Divider & copyright */}
-            <div className="border-t border-gray-800/80 mt-8 pt-6 text-center text-gray-500 text-sm">
-                © {new Date().getFullYear()} HABLO India. All rights reserved.
-            </div>
+            {/*<div className="border-t border-gray-800/80 mt-8 pt-6 text-center text-gray-500 text-sm">*/}
+            {/*    © {new Date().getFullYear()} HABLO India. All rights reserved.*/}
+            {/*</div>*/}
         </>
     );
 }
