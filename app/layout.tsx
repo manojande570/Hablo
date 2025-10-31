@@ -25,23 +25,21 @@ export const metadata: Metadata = {
     },
 
     // ✅ Open Graph (used by WhatsApp, Facebook, LinkedIn)
-    openGraph: {
-        title: "DemoSite - Modern Web Experience",
-        description:
-            "Discover a beautiful demo website built with Next.js, designed to test OG image previews.",
-        url: "https://demo-site-example.netlify.app",
-        siteName: "DemoSite",
-        images: [
-            {
-                url: "https://dummyimage.com/1200x630/000/fff.png&text=Demo+OG+Image",
-                width: 1200,
-                height: 630,
-                alt: "Demo OG Image",
-            },
-        ],
-        type: "website",
-        locale: "en_US",
-    },
+        openGraph: {
+            title: "HABLO - Modular Kitchen Accessories",
+            description: "Discover stylish and functional modular kitchen solutions by HABLO.",
+            url: "https://bejeweled-pika-84775d.netlify.app",
+            siteName: "HABLO",
+            images: [
+                {
+                    url: "https://dummyimage.com/1200x630/000/fff.png&text=HABLO+Kitchen",
+                    width: 1200,
+                    height: 630,
+                    alt: "HABLO - Modular Kitchen Accessories",
+                },
+            ],
+            type: "website",
+        },
 
     // ✅ Twitter (used by Twitter/X)
     twitter: {
