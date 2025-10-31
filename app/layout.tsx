@@ -23,13 +23,13 @@ export const metadata: Metadata = {
         title: "HABLO - Modular Kitchen Accessories",
         description:
             "Discover stylish and functional modular kitchen solutions by HABLO.",
-        url: "", // 🔁 replace with your real domain
+        url: "https://example-site.netlify.app/", // 🔁 replace with your real domain
         siteName: "HABLO",
         images: [
             {
-                url: "https://taupe-cajeta-e0f0c7.netlify.app/favicon.png", // ✅ use same icon for sharing
-                width: 512, // adjust if your favicon is smaller/larger
-                height: 512,
+                url: "https://dummyimage.com/1200x630/000/fff.png&text=HABLO+Preview+Image", // ✅ use same icon for sharing
+                width: 1200, // adjust if your favicon is smaller/larger
+                height: 630,
                 alt: "HABLO Logo",
                 type: "image/png",
             },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         type: "website",
     },
     twitter: {
-        card: "summary",
+        card: "summary_large_image",
         title: "HABLO - Modular Kitchen Accessories",
         description:
             "Transform your kitchen with premium accessories from HABLO.",
