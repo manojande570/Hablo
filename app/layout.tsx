@@ -1,6 +1,8 @@
+import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// ✅ Load Google Fonts
 const geistSans = Geist({
     variable: "--font-geist-sans",
     subsets: ["latin"],
@@ -11,63 +13,64 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
+// ✅ Website Metadata (with dummy data)
+export const metadata: Metadata = {
+    title: "DemoSite - Modern Web Experience",
+    description:
+        "Explore the DemoSite — a sample Next.js project with Open Graph and Twitter preview support.",
+
+    // ✅ Browser tab icon
+    icons: {
+        icon: "https://dummyimage.com/256x256/000/fff.png&text=DS", // Dummy favicon
+    },
+
+    // ✅ Open Graph (used by WhatsApp, Facebook, LinkedIn)
+    openGraph: {
+        title: "DemoSite - Modern Web Experience",
+        description:
+            "Discover a beautiful demo website built with Next.js, designed to test OG image previews.",
+        url: "https://demo-site-example.netlify.app",
+        siteName: "DemoSite",
+        images: [
+            {
+                url: "https://dummyimage.com/1200x630/000/fff.png&text=Demo+OG+Image",
+                width: 1200,
+                height: 630,
+                alt: "Demo OG Image",
+            },
+        ],
+        type: "website",
+        locale: "en_US",
+    },
+
+    // ✅ Twitter (used by Twitter/X)
+    twitter: {
+        card: "summary_large_image",
+        title: "DemoSite - Modern Web Experience",
+        description:
+            "Experience the clean and elegant demo website with perfect OG tags.",
+        images: ["https://dummyimage.com/1200x630/000/fff.png&text=Demo+OG+Image"],
+    },
+
+    metadataBase: new URL("https://demo-site-example.netlify.app"),
+};
+
+// ✅ Root Layout Component
 export default function RootLayout({
-    children,
-}: Readonly<{
+                                       children,
+                                   }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
-        <head>
-            <title>HABLO - Modular Kitchen Accessories</title>
-            <meta charSet="UTF-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-            <title>HABLO - Modular Kitchen Accessories</title>
-            <meta
-                name="description"
-                content="Premium modular kitchen accessories and solutions by HABLO."
-            />
-            <meta property="og:type" content="website"/>
-            <meta property="og:url" content="https://example-site.netlify.app/"/>
-            <meta
-                property="og:title"
-                content="HABLO - Modular Kitchen Accessories"
-            />
-            <meta
-                property="og:description"
-                content="Discover stylish and functional modular kitchen solutions by HABLO."
-            />
-            <meta
-                property="og:image"
-                content="https://dummyimage.com/1200x630/000/fff.png&text=HABLO+Preview+Image"
-            />
-            <meta property="og:image:width" content="1200"/>
-            <meta property="og:image:height" content="630"/>
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta
-                name="twitter:title"
-                content="HABLO - Modular Kitchen Accessories"
-            />
-            <meta
-                name="twitter:description"
-                content="Transform your kitchen with premium accessories from HABLO."
-            />
-            <meta
-                name="twitter:image"
-                content="https://dummyimage.com/1200x630/000/fff.png&text=HABLO+Preview+Image"
-            />
-            <link
-                rel="icon"
-                href="https://dummyimage.com/64x64/000/fff.png&text=H"
-                type="image/png"
-            />
-        </head>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
         {children}
         </body>
         </html>
     );
 }
+
 
 
