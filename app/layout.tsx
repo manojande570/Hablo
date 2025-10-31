@@ -13,35 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "HABLO - Modular Kitchen Accessories",
-    description:
-        "Premium modular kitchen accessories and solutions by HABLO. Redefine your space with elegance and functionality.",
-    icons: {
-        icon: "https://taupe-cajeta-e0f0c7.netlify.app/favicon.png", // Browser tab icon
-    },
+    title: "Spice AI",
+    description: "Future of Podcast.",
     openGraph: {
-        title: "HABLO - Modular Kitchen Accessories",
-        description:
-            "Discover stylish and functional modular kitchen solutions by HABLO.",
-        url: "", // 🔁 replace with your real domain
-        siteName: "HABLO",
+        title: "Spice AI",
+        description: "Future of Podcast.",
         images: [
             {
-                url: "https://taupe-cajeta-e0f0c7.netlify.app/favicon.png", // ✅ use same icon for sharing
-                width: 512, // adjust if your favicon is smaller/larger
-                height: 512,
-                alt: "HABLO Logo",
-                type: "image/png",
+                url: "https://spice-ai-assets.s3.us-east-1.amazonaws.com/spice-logo.jpeg",
+                width: 1080, // Square or portrait dimensions
+                height: 1080, // Using square dimensions which often triggers vertical layout
+                alt: "Spice AI",
             },
         ],
-        type: "website",
-    },
-    twitter: {
-        card: "summary",
-        title: "HABLO - Modular Kitchen Accessories",
-        description:
-            "Transform your kitchen with premium accessories from HABLO.",
-        images: ["https://taupe-cajeta-e0f0c7.netlify.app/favicon.png"], // ✅ same here
     },
 };
 
