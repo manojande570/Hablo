@@ -25,8 +25,8 @@ export default function RootLayout({
             <meta property="og:title" content="HABLO - Modular Kitchen Accessories" />
             <meta property="og:description" content="Discover stylish and functional modular kitchen solutions by HABLO." />
             <meta property="og:image" content="https://taupe-cajeta-e0f0c7.netlify.app/favicon.png" />
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
+            <meta property="og:image:width" content="87" />
+            <meta property="og:image:height" content="88" />
             <meta property="og:type" content="website" />
             <meta property="og:site_name" content="HABLO" />
             <meta name="twitter:card" content="summary" />
