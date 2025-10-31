@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,46 +11,29 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-    title: "HABLO - Modular Kitchen Accessories",
-    description:
-        "Premium modular kitchen accessories and solutions by HABLO. Redefine your space with elegance and functionality.",
-    icons: {
-        icon: "https://taupe-cajeta-e0f0c7.netlify.app/favicon.png", // Browser tab icon
-    },
-    openGraph: {
-        title: "HABLO - Modular Kitchen Accessories",
-        description:
-            "Discover stylish and functional modular kitchen solutions by HABLO.",
-        url: "https://example-site.netlify.app/", // 🔁 replace with your real domain
-        siteName: "HABLO",
-        images: [
-            {
-                url: "https://dummyimage.com/1200x630/000/fff.png&text=HABLO+Preview+Image", // ✅ use same icon for sharing
-                width: 1200, // adjust if your favicon is smaller/larger
-                height: 630,
-                alt: "HABLO Logo",
-                type: "image/png",
-            },
-        ],
-        type: "website",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "HABLO - Modular Kitchen Accessories",
-        description:
-            "Transform your kitchen with premium accessories from HABLO.",
-        images: ["https://taupe-cajeta-e0f0c7.netlify.app/favicon.png"], // ✅ same here
-    },
-};
-
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+    children,
+}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
+        <head>
+            <title>HABLO - Modular Kitchen Accessories</title>
+            <meta name="description" content="Premium modular kitchen accessories and solutions by HABLO. Redefine your space with elegance and functionality." />
+            <link rel="icon" href="https://taupe-cajeta-e0f0c7.netlify.app/favicon.png" />
+            <meta property="og:title" content="HABLO - Modular Kitchen Accessories" />
+            <meta property="og:description" content="Discover stylish and functional modular kitchen solutions by HABLO." />
+            <meta property="og:image" content="https://taupe-cajeta-e0f0c7.netlify.app/favicon.png" />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:type" content="website" />
+            <meta property="og:site_name" content="HABLO" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:title" content="HABLO - Modular Kitchen Accessories" />
+            <meta name="twitter:description" content="Transform your kitchen with premium accessories from HABLO." />
+            <meta name="twitter:image" content="https://taupe-cajeta-e0f0c7.netlify.app/favicon.png" />
+        </head>
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         </body>
