@@ -16,40 +16,45 @@ export const metadata: Metadata = {
     title: "HABLO - Modular Kitchen Accessories",
     description:
         "Premium modular kitchen accessories and solutions by HABLO. Redefine your space with elegance and functionality.",
+
+    // ✅ Browser Tab Icon
     icons: {
-        icon: "/favicon.png", // Browser tab icon
+        icon: "https://taupe-cajeta-e0f0c7.netlify.app/favicon.png",
     },
+
+    // ✅ Open Graph (WhatsApp, Facebook, LinkedIn Preview)
     openGraph: {
         title: "HABLO - Modular Kitchen Accessories",
         description:
             "Discover stylish and functional modular kitchen solutions by HABLO.",
-        url: "", // 🔁 replace with your real domain
+        url: "https://taupe-cajeta-e0f0c7.netlify.app", // your deployed URL
         siteName: "HABLO",
         images: [
             {
-                url: "/favicon.png", // ✅ use same icon for sharing
-                width: 512, // adjust if your favicon is smaller/larger
+                url: "https://taupe-cajeta-e0f0c7.netlify.app/favicon.png", // must be an absolute URL
+                width: 512,
                 height: 512,
                 alt: "HABLO Logo",
-                type: "image/png",
             },
         ],
         type: "website",
     },
+
+    // ✅ Twitter Preview
     twitter: {
         card: "summary",
         title: "HABLO - Modular Kitchen Accessories",
         description:
             "Transform your kitchen with premium accessories from HABLO.",
-        images: ["/favicon.png"], // ✅ same here
+        images: ["https://taupe-cajeta-e0f0c7.netlify.app/favicon.png"], // absolute URL
     },
 };
 
 export default function RootLayout({
                                        children,
-                                   }: Readonly<{
+                                   }: {
     children: React.ReactNode;
-}>) {
+}) {
     return (
         <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
